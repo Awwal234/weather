@@ -2,10 +2,10 @@ const searchcountry = document.getElementById('searchcountry');
 const ipad = document.getElementById('ipadres');
 const region = document.getElementById('region');
 const tzone = document.getElementById('tzone');
-const default_ip = document.getElementById('searchcountry').value;
+const default_ip = document.getElementById('searchcountry');
 const show_weather = () => {
 	fetch(
-		`https://geo.ipify.org/api/v2/country?apiKey=at_LTHNls3QLuJsEwpRbDkL2JOBKgNER&ipAddress=${default_ip}`,
+		`https://geo.ipify.org/api/v2/country?apiKey=at_LTHNls3QLuJsEwpRbDkL2JOBKgNER&ipAddress= ${default_ip.value}`,
 	)
 		.then((response) => response.json())
 		// .then((data) => (searchcountry.value = data.location.country))
@@ -28,7 +28,6 @@ btn.addEventListener('click', (e) => {
 		e.preventDefault();
 	} else {
 		show_weather();
-		e.preventDefault();
 	}
 });
 
