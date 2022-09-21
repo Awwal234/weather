@@ -1,0 +1,161 @@
+body {
+	background: #f6f8f9;
+}
+.inp {
+	display: flex;
+	align-items: top;
+	padding: 0px;
+	width: 50%;
+	height: fit-content;
+	background: transparent;
+	border-radius: 12px 12px 12px 12px;
+	margin-top: 40px;
+}
+.inp_holder {
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+}
+.inputy {
+	width: 80%;
+	padding: 12px;
+	border-radius: 12px 0px 0px 12px;
+	border: 1px solid gray;
+}
+.inputy:focus {
+	outline: none;
+}
+.Go {
+	padding: 12px;
+	width: 20%;
+	border-radius: 0px 12px 12px 0px;
+	background: #000;
+	color: #fff;
+	border: 0px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.Go:focus {
+	outline: none;
+}
+
+.loc_con {
+	margin: 0 auto;
+	margin-top: 60px;
+	width: 80%;
+	padding: 20px;
+	border: 1px solid #fcd34d;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.spaced {
+	line-height: 30px;
+	border-right: 1px solid #9ca3af;
+	width: 25%;
+	padding: 20px;
+}
+.spacedy {
+	line-height: 30px;
+	width: 25%;
+	padding: 20px;
+}
+.titled {
+	font-weight: 600;
+	font-size: 17px;
+	font-family: sans-serif;
+}
+.ipadres {
+	font-weight: 700;
+	font-size: 20px;
+	font-family: sans-serif;
+	margin-top: 8px;
+}
+
+footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	padding: 20px;
+	background: #fcd34d;
+	left: 0;
+}
+.icon {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+.ico {
+	width: 30px;
+}
+.logo {
+	font-weight: bold;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+	.inp {
+		display: flex;
+		align-items: top;
+		padding: 0px;
+		width: 75%;
+		height: fit-content;
+		background: transparent;
+		border-radius: 12px 12px 12px 12px;
+		margin-top: 40px;
+	}
+	.inputy {
+		width: 60%;
+		padding: 12px;
+		border-radius: 12px 0px 0px 12px;
+		border: 1px solid gray;
+	}
+	.inputy:focus {
+		outline: none;
+	}
+	.Go {
+		padding: 12px;
+		width: 25%;
+		border-radius: 0px 12px 12px 0px;
+		background: #000;
+		color: #fff;
+		border: 0px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	.spaced {
+		line-height: 30px;
+		border-right: 1px solid #9ca3af;
+		width: fit-content;
+		padding: 10px;
+	}
+	.spacedy {
+		line-height: 30px;
+		width: fit-content;
+		padding: 10px;
+	}
+	.titled {
+		font-weight: 300;
+		font-size: 13px;
+		font-family: sans-serif;
+	}
+	.ipadres {
+		font-weight: 300;
+		font-size: 12px;
+		font-family: sans-serif;
+		margin-top: 8px;
+	}
+
+	.loc_con {
+		margin: 0 auto;
+		margin-top: 60px;
+		width: 80%;
+		padding: 20px;
+		border: 1px solid #fcd34d;
+		border-radius: 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+}
